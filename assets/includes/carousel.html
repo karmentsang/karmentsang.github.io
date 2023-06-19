@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/style.css">
+
+<!--
+add images here
+dimensions: 370x540
+--->
+<div class="container slideshow">
+    <div class="images fade"><img src="/assets/images/me.jpg" alt=""></div>
+    <div class="images fade"><img src="/assets/images/me2.jpg" alt=""></div>
+</div>
+
+<!-- indicators to display active image --->
+<div>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+</div>
+<br>
+
+<script>
+    let index = 0;
+    carousel();
+
+    function carousel() {
+        const photos = document.querySelectorAll('.images');
+        const indicators = document.querySelectorAll('.indicator');
+
+        photos.forEach(photo => photo.style.display = 'none');
+        index++;
+        if (index > photos.length) {
+            index = 1;
+        }
+        indicators.forEach(indicator => indicator.classList.remove('active'));
+
+        photos[index - 1].style.display = 'block';
+        indicators[index - 1].classList.add('active');
+        setTimeout(carousel, 3000);
+    }
+</script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <title>Karmen Tsang &#8212; Web Designer & Developer</title>
+</head>
+
+<div class="layout">
+    <body>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <a class="linkup" href="index.html"> KT &#8212; 00 </a><br>
+        <a style=" font-size: 1em; padding-left: 5px; padding-right: 20px;" href="about.html">About</a>
+        <a style=" font-size: 1em;" href="contact.html">Contact</a>
+
+        <div class="heading">
+            <h1>Karmen Tsang</h1>
+        </div>
+        <div class="headingtwo">
+            <h2>Created using my Honours project</h2>
+        </div>
+        <br><br>
+        <p>
+            An aspiring digital designer and web developer &#8212;
+            I have always loved designing and creating websites,
+            wanting to learn more and expand on my current skill set.<br><br>
+            The biggest step to all of this is my <b>Honours project!</b>
+        </p>
+        <div class="container">
+            {% if recent %}
+            <h3 style="color: #3a3a3a">Latest posts</h3>
+            {% for page in recent %}
+            <li style="font-size: 20px"> | <a style="font-size: 20px" href="{{ page.url }}">{{ page.title }}</a></li>
+            <br>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+    </body>
+    {% include "footer.html" %}
+</div>
+</html>
