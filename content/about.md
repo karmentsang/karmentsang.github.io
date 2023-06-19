@@ -25,6 +25,7 @@ With all of these combined, nothing can make me happier.
 
 In my honest opinion, I didn't believe that I would survive university, but I did. Graduation is on 21/06/23, scary stuff.
 
+--- 
 Here's a showcase:
 
 <object data="/assets/includes/carousel.html" width="433" height="530"></object>
