@@ -22,7 +22,7 @@ providing them with a comprehensive insight into my capabilities and achievement
 
 Here is the front cover of my dissertation.
 
-![report.png](../assets/images/report.png)
+<img src="/assets/images/report.png" width="433" height="530">
 
 
 
