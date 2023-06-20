@@ -14,7 +14,7 @@ Web development has always captivated my interest, so when presented with the ch
 to delve deeper into it, I wholeheartedly embraced the opportunity. 
 And as a way to document my progress and ongoing growth, I embarked on creating a blog-like website.
 
-In my honest opinion, I didn't think that I would survive university, but I did. 
+In my honest opinion, I didn't think that I would survive university, but I did. <br>
 Graduation is on 21/06/23, scary stuff.
 
 ---
@@ -34,6 +34,7 @@ sheer excitement and enjoyment it brought - and the jump scares.
 
 I'll add some photos here to show you a glimpse of my life:
 
+<br>
 <object data="/assets/includes/carousel.html" width="433" height="530"></object>
 
 

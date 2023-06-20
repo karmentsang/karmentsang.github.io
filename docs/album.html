@@ -28,32 +28,43 @@
 
         <h1> Photo Gallery </h1>
         <p> All my photos in one place!</p>
-        <p> Click an image to see the details:</p>
+        <p> Click an image to see the full size!<br>
+         Unfortunately, those that are not on desktop will
+            not be able to view the full size image.</p>
         <hr>
 
         <div>
             <table>
                 <tr>
                     
-                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me.jpg" alt="" id="popup" width="374px" height="466" style="max-width: 100%; height: 100%;">
+                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me.jpg" alt="" id="popup"
+                                                                          width="374px" height="466"
+                                                                          style="max-width: 100%; height: 100%;">
                     </td>
                     
-                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me2.jpg" alt="" id="popup" width="374px" height="466" style="max-width: 100%; height: 100%;">
+                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me2.jpg" alt="" id="popup"
+                                                                          width="374px" height="466"
+                                                                          style="max-width: 100%; height: 100%;">
                     </td>
                     
-                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me3.jpg" alt="" id="popup" width="374px" height="466" style="max-width: 100%; height: 100%;">
+                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me3.jpg" alt="" id="popup"
+                                                                          width="374px" height="466"
+                                                                          style="max-width: 100%; height: 100%;">
                     </td>
                     
-                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me4.jpg" alt="" id="popup" width="374px" height="466" style="max-width: 100%; height: 100%;">
+                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me4.jpg" alt="" id="popup"
+                                                                          width="374px" height="466"
+                                                                          style="max-width: 100%; height: 100%;">
                     </td>
                     
-                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me5.jpg" alt="" id="popup" width="374px" height="466" style="max-width: 100%; height: 100%;">
+                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me5.jpg" alt="" id="popup"
+                                                                          width="374px" height="466"
+                                                                          style="max-width: 100%; height: 100%;">
                     </td>
                     
-                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me6.jpg" alt="" id="popup" width="374px" height="466" style="max-width: 100%; height: 100%;">
-                    </td>
-                    
-                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me7.jpg" alt="" id="popup" width="374px" height="466" style="max-width: 100%; height: 100%;">
+                    <td style="display: inline-block; padding: 47px"><img src="/assets/images\me6.jpg" alt="" id="popup"
+                                                                          width="374px" height="466"
+                                                                          style="max-width: 100%; height: 100%;">
                     </td>
                     
                 </tr>
@@ -71,7 +82,8 @@
         </div>
 
         <div class="container">
-            <a class="aedit" style="float: right;" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+            <a class="aedit" style="float: right;" href="#top">Back to top &#8205; <i class="fa fa-arrow-up"
+                                                                                      aria-hidden="true"></i></a>
         </div>
 
         <!-- can use css grid to allow all images be displayed on mobile devices.-->
@@ -86,14 +98,12 @@
                 img.addEventListener('click', function (e) {
                     e.preventDefault();
                     const src = this.src;
-                    fetch(src)
-                        .then(response => response.blob())
-                        .then(blob => {
-                            const fileSize = (blob.size / 1024).toFixed(1);
-                            modal.style.display = "block";
-                            document.getElementById('print').innerHTML = `Filename: ${decodeURIComponent(this.src.split("/").pop().slice(0, -4))}<br>Width: ${this.naturalWidth}px<br>Height: ${this.naturalHeight}px<br>Format: ${this.src.slice(-3).toUpperCase()} <br> File Size: ${fileSize} KB`;
-                        })
-                        .catch(() => console.log("Error fetching image file"));
+                    const imgElement = document.createElement('img');
+                    imgElement.src = src;
+                    imgElement.classList.add('full-image');
+                    modal.style.display = "block";
+                    document.getElementById('print').innerHTML = '';
+                    document.getElementById('print').appendChild(imgElement);
                 });
             });
 
@@ -121,7 +131,7 @@
         <a href="https://www.linkedin.com/in/karmen-tsang-920b86274/"><i style="font-size:50px; color: #0072b1"
                                                                          class="fa">&#xf0e1;</i></a>
         </p>
-     <p>&#169 2023 KT &#8212; 00 </p>
+     <p style="font-size: 0.7em">&#169 2023 KT &#8212; 00 </p>
     </div>
 </footer>
 

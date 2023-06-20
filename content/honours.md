@@ -13,18 +13,21 @@ The objective was to design a versatile tool capable of generating static websit
 from different formats such as Markdown, YAML, HTML, and CSS. Additionally, I incorporated 
 dynamic features into the SSG and ensured its user-friendliness.
 
-
 I realised an opportunity to utilise my skills and knowledge to create a website 
 that would not only showcase my progression but also serve as a digital portfolio. 
 I aim to demonstrate my growth, skills, and dedication to potential employers and collaborators, 
 providing them with a comprehensive insight into my capabilities and achievements.
 
+Among all the modules I undertook in my fourth year, 
+my honors project stood out as the most enjoyable. 
+It went beyond the boundaries of traditional work and felt more like a captivating 
+side project. Engaging in the project didn't feel like a task or obligation; 
+instead, it was a source of pure fun and excitement. 
 
-Here is the front cover of my dissertation.
+
+Here is the front cover of my dissertation:
 
 <img style="width="475" height="673"" src="/assets/report.png" >
-
-
 
 
 
