@@ -1,12 +1,16 @@
 /*--- device friendly sizes ---*/
 /* mobile */
-.container {
-    padding: 14px;
-    font-size: 14px;
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+    .container {
+        padding: 14px;
+        font-size: 14px;
+    }
 }
 
 /* tablet */
-@media screen and (min-width: 600px) {
+@media screen and (min-device-width: 600px)
+and (max-device-width: 1024px) {
     .container {
         padding: 20px;
         font-size: 16px;
@@ -14,10 +18,20 @@
 }
 
 /* desktop */
-@media screen and (min-width: 900px) {
+@media screen and (min-device-width: 1024px) {
     .container {
         padding: 24px;
         font-size: 19px;
+    }
+}
+
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+    .container {
+        padding: 14px;
+        font-size: 14px;
     }
 }
 
