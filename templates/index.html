@@ -37,13 +37,17 @@
         </p>
         <div class="container">
             {% if recent %}
-            <h3 style="color: #3a3a3a">Latest posts</h3>
             {% for page in recent %}
             <li style="font-size: 20px"> | <a style="font-size: 20px" href="{{ page.url }}">{{ page.title }}</a></li>
             <br>
             {% endfor %}
             {% endif %}
         </div>
+
+        <div class="container">
+            <a class="aedit" style="float: right;" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        </div>
+
     </div>
     </body>
     {% include "footer.html" %}

@@ -7,5 +7,5 @@ include: false
 
 Best place to contact me is by email.
 
-Email Address: <ktsanng@icloud.com>
+Email Address: <a class="aedit" href="mailto: ktsanng@icloud.com">ktsanng@icloud.com</a>
 

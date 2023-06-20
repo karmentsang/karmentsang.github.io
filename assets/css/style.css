@@ -177,6 +177,10 @@ a {
     font-size: 2.5em;
 }
 
+.aedit {
+    font-size: 100%;
+}
+
 a:hover {
     color: navy;
     text-decoration: underline;
@@ -258,6 +262,7 @@ button {
 object {
     max-width: 100%;
     max-height: 100%;
+
 }
 
 
