@@ -7,7 +7,7 @@ from jinja2 import Environment, FileSystemLoader
 # directories
 template_dir = 'templates'
 outputs_dir = 'docs'
-images_dir = 'assets/images/original_album'
+images_dir = 'assets/images'
 
 # create jinja2 env
 env = Environment(loader=FileSystemLoader(template_dir))

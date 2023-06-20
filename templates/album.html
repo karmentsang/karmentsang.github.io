@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <title>{{ title }}</title>
+</head>
+
+<div class="layout">
+    <body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="float">
+        <ul class="container float">
+            <a href="index.html"> KT &#8212; 00 </a><br>
+            <a style=" font-size: 1em; padding-left: 5px; padding-right: 20px;" href="about.html">About</a>
+            <a style=" font-size: 1em;" href="contact.html">Contact</a>
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <h1> Photo Gallery </h1>
+        <p> All my photos in one place!</p>
+        <p> Click an image to see the details:</p>
+        <hr>
+
+        <div>
+            <table>
+                <tr>
+                    {% for images in image %}
+                    <td style="display: inline-block"><img src="/{{ images }}" alt="" id="popup"
+                                                           width="245px" height="365"></td>
+                    {% endfor %}
+                </tr>
+            </table>
+        </div>
+
+        <!-- MODAL -->
+        <div class="container layout">
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="print"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <a style="float: right;" href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        </div>
+
+        <!-- can use css grid to allow all images be displayed on mobile devices.-->
+
+        <script>
+            const modal = document.getElementById("modal");
+            const close = modal.querySelector(".close");
+
+            // open the modal when an image is clicked
+            const images = document.querySelectorAll('#popup');
+            images.forEach(function (img) {
+                img.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const src = this.src;
+                    fetch(src)
+                        .then(response => response.blob())
+                        .then(blob => {
+                            const fileSize = (blob.size / 1024).toFixed(1);
+                            modal.style.display = "block";
+                            document.getElementById('print').innerHTML = `Filename: ${decodeURIComponent(this.src.split("/").pop().slice(0, -4))}<br>Width: ${this.naturalWidth}px<br>Height: ${this.naturalHeight}px<br>Format: ${this.src.slice(-3).toUpperCase()} <br> File Size: ${fileSize} KB`;
+                        })
+                        .catch(() => console.log("Error fetching image file"));
+                });
+            });
+
+            close.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+
+            window.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        </script>
+    </div>
+    </body>
+
+    {% include "footer.html" %}
+
+</div>
+</html>
+
+
