@@ -17,13 +17,11 @@
     <body>
 
     <!-- NAVIGATION BAR -->
-    <nav class="float">
-        <ul class="container float">
-            <a href="index.html"> KT &#8212; 00 </a><br>
-            <a style=" font-size: 1em; padding-left: 5px; padding-right: 20px;" href="about.html">About</a>
-            <a style=" font-size: 1em;" href="contact.html">Contact</a>
-        </ul>
-    </nav>
+    <div class="container">
+        <a href="index.html"> KT &#8212; 00 </a><br>
+        <a style=" font-size: 1em; padding-left: 5px; padding-right: 20px;" href="about.html">About</a>
+        <a style=" font-size: 1em;" href="contact.html">Contact</a>
+    </div>
 
     <!-- MAIN CONTENT -->
     <div class="container">
@@ -38,7 +36,7 @@
                 <tr>
                     {% for images in image %}
                     <td style="display: inline-block"><img src="/{{ images }}" alt="" id="popup"
-                                                           width="245px" height="365"></td>
+                                                           width="374px" height="466"></td>
                     {% endfor %}
                 </tr>
             </table>
