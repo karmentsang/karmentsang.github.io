@@ -1,7 +1,6 @@
 ---
 title: About Me
 description:  What is there to know about me?
-date: 2023-06-18
 include: false
 ---
 

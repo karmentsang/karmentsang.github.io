@@ -1,7 +1,7 @@
 ---
 title: Honours Project
 description: I used my Honours project to create this website?
-date: 2023-06-19
+date: 2023-06-18
 include: true
 
 ---
@@ -24,11 +24,9 @@ It went beyond the boundaries of traditional work and felt more like a captivati
 side project. Engaging in the project didn't feel like a task or obligation; 
 instead, it was a source of pure fun and excitement. 
 
-
 Here is the front cover of my dissertation:
 
-<img src="/assets/report.png" >
-
+<img width="434px" height="526" style="max-width: 100%; height: 100%;"src="/assets/report.png" >
 
 
 
