@@ -116,3 +116,4 @@ shutil.copytree(os.path.join(assets_dir), os.path.join(outputs_dir, assets_dir),
 #  call functions
 build_pages()
 album()
+

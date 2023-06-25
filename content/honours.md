@@ -27,7 +27,7 @@ instead, it was a source of pure fun and excitement.
 
 Here is the front cover of my dissertation:
 
-<img style="width="475" height="673"" src="/assets/report.png" >
+<img src="/assets/report.png" >
 
 
 

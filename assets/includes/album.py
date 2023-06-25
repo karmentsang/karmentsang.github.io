@@ -7,39 +7,35 @@ from jinja2 import Environment, FileSystemLoader
 # directories
 template_dir = 'templates'
 outputs_dir = 'docs'
-images_dir = 'assets/images'
+images_dir = 'assets/images/subs'
 
 # create jinja2 env
 env = Environment(loader=FileSystemLoader(template_dir))
 
 
 def album():
-    # list of image files in the images folder
-    photos = os.listdir(images_dir)
+    # list of subdirectories within the images folder
+    subdirectories = [f.path for f in os.scandir(images_dir) if f.is_dir()]
+    folder_list = []
 
-    image = [os.path.join(images_dir, f) for f in photos if f.endswith('.jpg')
-             or f.endswith('.jpeg') or f.endswith('.png')]
+    for subdir in subdirectories:
+        folder_name = os.path.basename(subdir)
 
-    # extract image properties for each image file
-    images = []
-    for image in images:
-        with Image.open(image) as img:
-            filename = os.path.basename(img)
-            width, height = img.size
-            form = img.format
-            size_bytes = os.path.getsize(img)  # get size in bytes
-            size_kb = size_bytes / 1024
+        # list of image files in the subdirectory
+        photos = os.listdir(subdir)
+        images = [os.path.join(subdir, f) for f in photos if
+                  f.endswith('.jpg') or f.endswith('.jpeg') or f.endswith('.png')]
 
-        # add image properties to list of images
-        images.append({'filename': filename,
-                       'width': width,
-                       'height': height,
-                       'format': form,
-                       'size_kb': size_kb
-                       })
+        if images:
+            folder_data = {
+                'folder': folder_name,
+                'images': images
+            }
+            folder_list.append(folder_data)
 
     template = env.get_template('album.html')
-    output = template.render(image=image)
+    output = template.render(folders=folder_list)
 
     with open(os.path.join(outputs_dir, 'album.html'), 'w') as f:
         f.write(output)
+

@@ -29,20 +29,25 @@
         <h1> Photo Gallery </h1>
         <p> All my photos in one place!</p>
         <p> Click an image to enlarge.</p>
-        <hr>
 
-        <div>
+        {% for folder in folders %}
+        {% if folder.images %}
+        <hr>
+        <h2>{{ folder.folder }}</h2>
+        <div id="album">
             <table>
                 <tr>
-                    {% for images in image %}
-                    <td style="display: inline-block; padding: 47px"><img src="/{{ images }}" alt="" id="popup"
-                                                                          width="374px" height="466"
+                    {% for image in folder.images %}
+                    <td style="display: inline-block; padding: 20px"><img src="/{{ image}}" alt="" id="popup"
+                                                                          width="434px" height="526"
                                                                           style="max-width: 100%; height: 100%;">
                     </td>
                     {% endfor %}
                 </tr>
             </table>
         </div>
+        {% endif %}
+        {% endfor %}
 
         <!-- MODAL -->
         <div class="container layout">
