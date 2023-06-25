@@ -32,9 +32,10 @@
 
         {% for folder in folders %}
         {% if folder.images %}
+
         <hr>
-        <h2>{{ folder.folder }}</h2>
-        <div id="album">
+        <h2>{{ folder.folder }}</h2><br>
+        <div>
             <table>
                 <tr>
                     {% for image in folder.images %}
