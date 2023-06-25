@@ -265,12 +265,6 @@ object {
 
 }
 
-img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -374,8 +368,8 @@ form {
 }
 
 .full-image {
-    max-width: 100%;
-    max-height: 90%;
+    max-width: 90%;
+    max-height: 80%;
 }
 
 .close {
