@@ -28,6 +28,8 @@ However, I diligently addressed this issue through extensive testing and thoroug
 As a result, I have successfully enhanced the webpage's responsiveness, ensuring its 
 adaptability to various screen sizes.
 
+---
+
 ### Dark and Light Theme - Customisation
 
 I've been tackling the ability to switch between light and dark mode. It still hasn't been implemented due to 
