@@ -32,5 +32,8 @@ adaptability to various screen sizes.
 
 ### Dark and Light Theme - Customisation
 
-I've been tackling the ability to switch between light and dark mode. It still hasn't been implemented due to 
-CSS files overlapping.
+I've been tackling the ability to switch between light and dark mode. 
+It still hasn't been implemented due to 
+CSS files overlapping. 
+In the JavaScript code I used local storage to remember the user's theme
+preference across page loads.
