@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/light.css">
+    <link rel="stylesheet" href="/assets/css/dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
     <title> Photo Gallery </title>
+    {% if mode == 'dark' %}
+    <link rel="stylesheet" href="dark.css">
+    {% else %}
+    <link rel="stylesheet" href="light.css">
+    {% endif %}
 </head>
 
 <div class="layout">
@@ -21,7 +27,10 @@
         <a href="index.html"> KT &#8212; 00 </a><br>
         <a style=" font-size: 1em; padding-right: 20px;" href="about.html">About</a>
         <a style=" font-size: 1em; padding-right: 20px;" href="contact.html">Contact</a>
-        <a style=" font-size: 1em;" href="album.html">Gallery</a>
+        <a style=" font-size: 1em; padding-right: 20px;" href="album.html">Gallery</a>
+        <a style=" font-size: 1em;" id="theme-toggle"><i class="fa fa-sun-o" aria-hidden="true"></i><i
+                class="fa fa-moon-o" aria-hidden="true"></i></a>
+
     </div>
 
     <!-- MAIN CONTENT -->
@@ -93,12 +102,43 @@
             });
 
             window.addEventListener("click", function (event) {
-                if (event.target === modal || event.target === modal.querySelector('.modal-content')){
+                if (event.target === modal || event.target === modal.querySelector('.modal-content')) {
                     modal.style.display = "none";
                 }
             });
         </script>
+
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Check local storage for the current theme preference
+            let currentTheme = localStorage.getItem('theme');
+            let body = document.body;
+
+            // Apply theme on page load
+    if (currentTheme === 'dark') {
+        body.classList.add('dark-theme');
+    } else {
+        body.classList.add('light-theme');
+    }
+
+    // Toggle theme on button click
+            let themeToggle = document.getElementById('theme-toggle');
+            themeToggle.addEventListener('click', function() {
+        if (body.classList.contains('dark-theme')) {
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+            localStorage.setItem('theme', 'light');
+        } else {
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+});
+    </script>
+
     </body>
 
     {% include "footer.html" %}
