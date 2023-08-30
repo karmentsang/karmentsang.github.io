@@ -1,0 +1,390 @@
+/*--- device friendly sizes ---*/
+/* mobile */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+    .container {
+        padding: 14px;
+        font-size: 10px;
+    }
+}
+
+/* tablet */
+@media screen and (min-device-width: 600px)
+and (max-device-width: 1024px) {
+    .container {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+
+/* desktop */
+@media screen and (min-device-width: 1024px) {
+    .container {
+        padding: 24px;
+        font-size: 19px;
+    }
+}
+
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+    .container {
+        padding: 14px;
+        font-size: 14px;
+    }
+}
+
+* {
+    font-family: "Manrope", serif;
+}
+
+body {
+    text-align: justify;
+}
+
+/*--- create the basic blog layout ---*/
+.layout {
+    background-color: rgb(231, 231, 231);
+    max-width: 62.5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+}
+
+.heading {
+    padding-top: 10%;
+}
+
+.heading h2 {
+    margin-top: 0;
+}
+
+/*--- FRONT MATTER ON EACH PAGE ---*/
+
+.front {
+    font-weight: 400;
+    font-style: italic;
+    font-size: large;
+
+}
+
+.front2 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: large;
+}
+
+/*--- NEW HOME PAGE ---*/
+
+.links {
+    font-weight: bold;
+    padding-bottom: 2px;
+    font-size: 120%;
+    text-decoration: underline;
+}
+
+.links a a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.description {
+    font-style: italic;
+    font-size: inherit;
+}
+
+.date {
+    font-size: inherit;
+    font-weight: 80;
+}
+
+
+/*--- NORMAL ---*/
+body {
+    background-color: lightgray;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    overscroll-behavior-x: none;
+}
+
+h1 {
+    color: black;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+h2 {
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+h3 {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+p {
+    text-align: justify;
+    font-size: 100%;
+}
+
+.p-weight {
+    font-weight: 100;
+}
+
+.padding {
+    padding: 1rem 50rem;
+}
+
+nav a {
+    border-bottom: 1px solid #3a3a3a;
+    text-align: justify;
+    color: black;
+    padding: 1.5rem 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #9BBBAE;
+    color: black;
+    border-bottom: 1px solid #065535;
+    text-decoration: none;
+}
+
+.float {
+    display: inline;
+}
+
+a {
+    text-align: justify;
+    color: black;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+.aedit {
+    font-size: 100%;
+}
+
+a:hover {
+    color: navy;
+    text-decoration: underline;
+}
+
+em {
+    font-weight: 400;
+}
+
+/*-------------------- FOOTER STYLING --------------------*/
+/*-- NEWSLETTER --*/
+.newsletter {
+    display: grid;
+    justify-items: left;
+    align-items: center;
+}
+
+.field {
+    font-size: inherit;
+    background-color: transparent;
+    text-align: left;
+    width: 55%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 10px;
+}
+
+.field::placeholder {
+    font-family: "Monaco", monospace;
+    color: #3a3a3a;
+}
+
+.sub {
+    text-align: justify-all;
+    width: 37%;
+    padding: 7px;
+    border: none;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+}
+
+a:hover {
+    color: #000000
+}
+
+.buttonIn {
+    position: relative;
+}
+
+button {
+    font-size: 20px;
+    background-color: transparent;
+    margin-left: 60%;
+    margin-bottom: 10px;
+    position: absolute;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    color: #065535;
+}
+
+/*--- SLIDESHOW ---*/
+.slideshow {
+    background-color: #e7e7e7;
+    color: #e7e7e7;
+    max-width: 1000px;
+    max-height: 1000px;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    border: 1px rgb(0, 0, 0, 0.1) solid;
+}
+
+object {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.indicator {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: none;
+    transition: background-color 0.6s ease;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*--- Enlarge Image ---*/
+.pointer {
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    font-size: xxx-large;
+    position: relative;
+}
+
+.image {
+    padding-bottom: 70%;
+    padding-top: 10%;
+}
+
+.resize {
+    max-width: 70%;
+    max-height: 70%;
+    margin-left: 70px;
+
+}
+
+/*--- Photo Album --*/
+
+form {
+    position: absolute;
+    width: 300px;
+    margin: auto;
+}
+
+.album_button, #submit {
+    font-size: 0.875em;
+    width: 250px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    margin: auto;
+    background: transparent;
+    outline: none;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.album_button:hover, #submit:hover {
+    background: slategrey;
+    color: #e2dedb;
+}
+
+/*--- The Modal ---*/
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    padding: 50px;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.full-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.up {
+    float: right;
+}
+
