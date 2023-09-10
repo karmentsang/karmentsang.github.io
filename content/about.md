@@ -8,10 +8,11 @@ Hi, my name is Karmen!
 I am a BSc Hons Computer Science 2023 graduate from The University of Strathclyde.
 
 During my time there, I found myself eagerly anticipating my 3rd year, 
-particularly because of the Web and Mobile Application Development course. 
+particularly because of the Web and Mobile Application Development modules. 
 Web development has always captivated my interest, so when presented with the chance 
-to delve deeper into it, I wholeheartedly embraced the opportunity. 
-And as a way to document my progress and ongoing growth, I embarked on creating a blog-like website.
+to delve deeper into it, I embraced the opportunity. 
+And as a way to document my progress and ongoing growth, I embarked on creating a blog-like website
+presenting improvements to existing code and adding new features.
 
 In my honest opinion, I didn't think that I would survive university, but I did. <br>
 Graduation is on 21/06/23, scary stuff.
