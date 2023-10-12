@@ -32,10 +32,7 @@ sheer excitement and enjoyment it brought - and the jump scares.
 
 ---
 
-I'll add some photos here to show you a glimpse of my life:
 
-<br>
-<object data="/assets/includes/carousel.html" width="433" height="530"></object>
 
 
 Oh, you're still here? Follow this <a href="album.html" class="aedit" style="color: blue">link</a> to see all my photos in one place.
