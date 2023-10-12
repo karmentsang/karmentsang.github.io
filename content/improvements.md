@@ -1,5 +1,5 @@
 ---
-title: Code Improvements
+title: code improvements
 description: Updates to my code since submission.
 date: 2023-06-25
 include: true
@@ -37,3 +37,11 @@ It still hasn't been implemented due to
 CSS files overlapping. 
 In the JavaScript code I used local storage to remember the user's theme
 preference across page loads.
+
+---
+
+### Small Hiccups
+
+There's often something that catches me by surprise. 
+Take, for instance, my gallery page – it kind of shifted a smidge (my inner perfectionist couldn't ignore it), 
+so I tried to fix it. Turns out, one of my divs ended up in the wrong spot.
