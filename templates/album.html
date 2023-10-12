@@ -18,26 +18,23 @@
 
     <!-- NAVIGATION BAR -->
     <div class="container">
-            <a href="index.html" style="text-decoration: none;">k. tsang</a><br><br>
-            <li><a style=" font-size: 1em; " href="about.html">About</a></li>
-            <li><a style=" font-size: 1em; " href="contact.html">Contact</a></li>
-            <li><a style=" font-size: 1em; " href="album.html">Gallery</a></li>
-            <a style="font-size: 1em; " id="theme-toggle"><i class="fa fa-sun-o" aria-hidden="true"></i><i
-                    class="fa fa-moon-o" aria-hidden="true"></i></a>
-
-    </div>
+        <a href="index.html" style="text-decoration: none;">k. tsang</a><br><br>
+        <li><a style=" font-size: 1em; " href="about.html">about</a></li>
+        <li><a style=" font-size: 1em; " href="contact.html">contact</a></li>
+        <li><a style=" font-size: 1em; " href="album.html">gallery</a></li>
+        <a style="font-size: 1em; " id="theme-toggle"><i class="fa fa-sun-o" aria-hidden="true"></i><i
+                class="fa fa-moon-o" aria-hidden="true"></i></a>
 
     <!-- MAIN CONTENT -->
-    <div class="container">
 
-        <h1> Photo Gallery </h1>
-        <p> All my photos in one place!</p>
-        <p> Click an image to enlarge.</p>
+        <h1 class="heading">gallery</h1>
+        <p>All my photos in one place! <br>
+            Click an image to enlarge.</p>
+        <hr>
 
         {% for folder in folders %}
         {% if folder.images %}
 
-        <hr>
         <h2>{{ folder.folder }}</h2>
         <br>
         <div>
@@ -105,32 +102,32 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-    // Check local storage for the current theme preference
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check local storage for the current theme preference
             let currentTheme = localStorage.getItem('theme');
             let body = document.body;
 
             // Apply theme on page load
-    if (currentTheme === 'dark') {
-        body.classList.add('dark-theme');
-    } else {
-        body.classList.add('light-theme');
-    }
+            if (currentTheme === 'dark') {
+                body.classList.add('dark-theme');
+            } else {
+                body.classList.add('light-theme');
+            }
 
-    // Toggle theme on button click
+            // Toggle theme on button click
             let themeToggle = document.getElementById('theme-toggle');
-            themeToggle.addEventListener('click', function() {
-        if (body.classList.contains('dark-theme')) {
-            body.classList.remove('dark-theme');
-            body.classList.add('light-theme');
-            localStorage.setItem('theme', 'light');
-        } else {
-            body.classList.remove('light-theme');
-            body.classList.add('dark-theme');
-            localStorage.setItem('theme', 'dark');
-        }
-    });
-});
+            themeToggle.addEventListener('click', function () {
+                if (body.classList.contains('dark-theme')) {
+                    body.classList.remove('dark-theme');
+                    body.classList.add('light-theme');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    body.classList.remove('light-theme');
+                    body.classList.add('dark-theme');
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+        });
     </script>
 
     </body>

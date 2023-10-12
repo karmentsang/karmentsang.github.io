@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: contact
 description: Need to contact me?
 include: false
 ---
