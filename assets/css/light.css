@@ -251,13 +251,11 @@ button {
 
 /*--- SLIDESHOW ---*/
 .slideshow {
-    background-color: #e7e7e7;
     color: #e7e7e7;
     max-width: 100%;
-    max-height: 60%;
+    height: auto;
     position: relative;
     overflow: hidden;
-    border: 1px rgb(0, 0, 0, 0.1) solid;
 }
 
 .slideshow img {
