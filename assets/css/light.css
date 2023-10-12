@@ -254,11 +254,16 @@ button {
     background-color: #e7e7e7;
     color: #e7e7e7;
     max-width: 100%;
-    height: auto;
+    max-height: 60%;
     position: relative;
     overflow: hidden;
     border: 1px rgb(0, 0, 0, 0.1) solid;
 }
+
+.slideshow img {
+    max-width: 100%;
+}
+
 
 object {
     max-width: 100%;
