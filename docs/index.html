@@ -31,7 +31,6 @@
         <br>
         <br>
         <br>
-
         <link rel="stylesheet" href="/assets/css/light.css">
 
 <!--
@@ -39,12 +38,12 @@ add images here
 dimensions: 370x540
 --->
 <div class="slideshow">
-    <div class="images fade"><img src="/assets/images/subs/General/me.jpg" alt="" style="width: 950px; height: auto;"></div>
-    <div class="images fade"><img src="/assets/images/subs/General/me2.jpg" alt="" style="width: 950px; height: auto;"></div>
-    <div class="images fade"><img src="/assets/images/subs/General/me3.jpg" alt="" style="width: 950px; height: auto;"></div>
-    <div class="images fade"><img src="/assets/images/subs/General/me4.jpg" alt="" style="width: 950px; height: auto;"></div>
-    <div class="images fade"><img src="/assets/images/subs/General/me5.jpg" alt="" style="width: 950px; height: auto;"></div>
-    <div class="images fade"><img src="/assets/images/subs/General/me6.jpg" alt="" style="width: 950px; height: auto;"></div>
+    <div class="images fade"><img src="/assets/images/subs/General/me.jpg" alt="" style="width: 700px; height: auto;"></div>
+    <div class="images fade"><img src="/assets/images/subs/General/me2.jpg" alt="" style="width: 700px; height: auto;"></div>
+    <div class="images fade"><img src="/assets/images/subs/General/me3.jpg" alt="" style="width: 700px; height: auto;"></div>
+    <div class="images fade"><img src="/assets/images/subs/General/me4.jpg" alt="" style="width: 700px; height: auto;"></div>
+    <div class="images fade"><img src="/assets/images/subs/General/me5.jpg" alt="" style="width: 700px; height: auto;"></div>
+    <div class="images fade"><img src="/assets/images/subs/General/me6.jpg" alt="" style="width: 700px; height: auto;"></div>
    </div>
 
 <!-- indicators to display active image --->
@@ -78,7 +77,6 @@ dimensions: 370x540
         setTimeout(carousel, 3000);
     }
 </script>
-
         <br>
         <br>
         <br>
@@ -116,7 +114,6 @@ dimensions: 370x540
     <script>
         const text = "created using my honours project.";
         const speed = 60;
-
         const element = document.getElementById("typing");
         let i = 0;
 
@@ -126,8 +123,7 @@ dimensions: 370x540
                 i++;
                 setTimeout(type, speed);
             } else {
-                // Add the blinking "_" character
-                element.innerHTML += '<span class="blink">_</span>';
+                element.innerHTML += '<span class="blink">_</span>'; // add the blinking "_" character
             }
         }
 
@@ -137,11 +133,8 @@ dimensions: 370x540
             type(); // Start typing again
         }
 
-        type(); // Initial typing
-
-        // Set an interval to repeat the typing every 10 seconds
-        setInterval(repeatType, 7000); // 10000 milliseconds = 10 seconds
-
+        type(); // begin typing animation
+        setInterval(repeatType, 7000); // repeat every 7 seconds
     </script>
 
     </body>

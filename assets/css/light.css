@@ -255,6 +255,7 @@ button {
     height: auto;
     position: relative;
     overflow: hidden;
+    left: 12%;
 }
 
 .slideshow img {
