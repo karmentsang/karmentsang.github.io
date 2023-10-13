@@ -391,13 +391,25 @@ form {
     float: right;
 }
 
-
-@keyframes blink {
-    0% { opacity: 0; } /*  invisible text */
-    50% { opacity: 1; } /* blink at full visibility */
-    100% { opacity: 0; } /* end with invisible text */
+#typing {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
 }
 
 .blink {
-    animation: blink 0.8s infinite; /* 1s is the duration, 'infinite' makes it repeat */
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

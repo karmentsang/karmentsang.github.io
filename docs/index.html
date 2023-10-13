@@ -83,10 +83,9 @@ dimensions: 370x540
         <br>
         <br>
         <h2>my portfolio.</h2>
-        <h3 style="padding-left: 60px;">created using my honours project.<span class="blink">_</span></h3>
+        <h3 id="typing" style="padding-left: 60px;"></h3>
         <br>
         <br>
-
 
         <p>An aspiring digital designer and web developer &#8212;
             I have always loved designing and creating websites,
@@ -95,8 +94,6 @@ dimensions: 370x540
             <br>
             The biggest step to all of this is my <b>Honours project!</b>
             <br>
-
-
         </p>
 
         <div class="container">
@@ -115,6 +112,37 @@ dimensions: 370x540
         </div>
 
     </div>
+
+    <script>
+        const text = "created using my honours project.";
+        const speed = 60;
+
+        const element = document.getElementById("typing");
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            } else {
+                // Add the blinking "_" character
+                element.innerHTML += '<span class="blink">_</span>';
+            }
+        }
+
+        function repeatType() {
+            element.textContent = ''; // Clear the text
+            i = 0; // Reset the index
+            type(); // Start typing again
+        }
+
+        type(); // Initial typing
+
+        // Set an interval to repeat the typing every 10 seconds
+        setInterval(repeatType, 7000); // 10000 milliseconds = 10 seconds
+
+    </script>
 
     </body>
     <!-- FOOTER -->

@@ -31,17 +31,14 @@
         <br>
         <br>
         <br>
-
         {% include "slides.html" %}
-
         <br>
         <br>
         <br>
         <h2>my portfolio.</h2>
-        <h3 style="padding-left: 60px;">created using my honours project.<span class="blink">_</span></h3>
+        <h3 id="typing" style="padding-left: 60px;"></h3>
         <br>
         <br>
-
 
         <p>An aspiring digital designer and web developer &#8212;
             I have always loved designing and creating websites,
@@ -50,8 +47,6 @@
             <br>
             The biggest step to all of this is my <b>Honours project!</b>
             <br>
-
-
         </p>
 
         <div class="container">
@@ -64,6 +59,32 @@
         </div>
 
     </div>
+
+    <script>
+        const text = "created using my honours project.";
+        const speed = 60;
+        const element = document.getElementById("typing");
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            } else {
+                element.innerHTML += '<span class="blink">_</span>'; // add the blinking "_" character
+            }
+        }
+
+        function repeatType() {
+            element.textContent = ''; // Clear the text
+            i = 0; // Reset the index
+            type(); // Start typing again
+        }
+
+        type(); // begin typing animation
+        setInterval(repeatType, 7000); // repeat every 7 seconds
+    </script>
 
     </body>
     {% include "footer.html" %}
