@@ -391,14 +391,13 @@ form {
     float: right;
 }
 
-/* Define the animation for the blinking effect */
+
 @keyframes blink {
-    0% { opacity: 0; } /* Start with invisible text */
-    50% { opacity: 1; } /* Blink at full visibility */
-    100% { opacity: 0; } /* End with invisible text */
+    0% { opacity: 0; } /*  invisible text */
+    50% { opacity: 1; } /* blink at full visibility */
+    100% { opacity: 0; } /* end with invisible text */
 }
 
-/* Apply the animation to the class */
 .blink {
     animation: blink 0.8s infinite; /* 1s is the duration, 'infinite' makes it repeat */
 }
