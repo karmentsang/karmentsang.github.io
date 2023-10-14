@@ -1,5 +1,5 @@
 ---
-title: Honours Project
+title: honours project
 description: I used my Honours project to create this website?
 date: 2023-06-18
 include: true

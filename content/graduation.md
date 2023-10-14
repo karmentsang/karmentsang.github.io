@@ -1,5 +1,5 @@
 ---
-title: Graduation
+title: graduation
 description:  I've graduated!
 date: 2023-06-22
 include: true
