@@ -31,15 +31,14 @@
         <br>
         <br>
         <br>
+        <div class="container center">
         {% include "slides.html" %}
-        <br>
-        <br>
+        </div>
         <br>
         <h2>my portfolio.</h2>
         <h3 id="typing" style="padding-left: 60px;"></h3>
         <br>
         <br>
-
         <p>An aspiring digital designer and web developer &#8212;
             I have always loved designing and creating websites,
             wanting to learn more and expand on my current skill set.
@@ -48,11 +47,13 @@
             The biggest step to all of this is my <b>Honours project!</b>
             <br>
         </p>
+        <br>
 
         <div class="container">
             {% if recent %}
             {% for page in recent %}
-            <li style="font-size: 20px"> | <a style="font-size: 20px" href="{{ page.url }}">{{ page.title }}</a></li>
+            <li style="font-size: 20px"> | <a style="font-size: 20px" href="{{ page.url }}">{{ page.title }}</a>
+            </li>
             <br>
             {% endfor %}
             {% endif %}

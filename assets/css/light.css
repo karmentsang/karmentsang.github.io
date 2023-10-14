@@ -255,9 +255,12 @@ button {
     height: auto;
     position: relative;
     overflow: hidden;
-    left: 12%;
-}
+    }
 
+.center{
+    text-align: center;
+    position: center;
+}
 .slideshow img {
     max-width: 100%;
 }
@@ -393,7 +396,7 @@ form {
 }
 
 #typing {
-    font-size: 24px;
+    font-size: 1.2em;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
