@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="/assets/css/light.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <title>k.</title>
+</head>
+
+<div class="layout">
+    <body>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <a href="index.html" style="text-decoration: none;">k. tsang</a><br><br>
+        <li><a style=" font-size: 1em;" href="about.html">about</a></li>
+        <li><a style=" font-size: 1em; padding-top: 10px;" href="contact.html">contact</a></li>
+        <li><a style=" font-size: 1em;" href="album.html">gallery</a></li>
+        <a style="font-size: 1em; " id="theme-toggle"><i class="fa fa-sun-o" aria-hidden="true"></i><i
+                class="fa fa-moon-o" aria-hidden="true"></i></a>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container center">
+        <link rel="stylesheet" href="/assets/css/light.css">
+
+<!--
+add images here
+dimensions: 370x540
+--->
+<div class="slideshow">
+    <div class="images fade"><img src="/assets/images/subs/General/me.jpg" alt="" style="width: 700px; height: auto;"></div>
+    <div class="images fade"><img src="/assets/images/subs/General/me2.jpg" alt="" style="width: 700px; height: auto;"></div>
+    <div class="images fade"><img src="/assets/images/subs/General/me3.jpg" alt="" style="width: 700px; height: auto;"></div>
+    <div class="images fade"><img src="/assets/images/subs/General/me4.jpg" alt="" style="width: 700px; height: auto;"></div>
+    <div class="images fade"><img src="/assets/images/subs/General/me5.jpg" alt="" style="width: 700px; height: auto;"></div>
+    <div class="images fade"><img src="/assets/images/subs/General/me6.jpg" alt="" style="width: 700px; height: auto;"></div>
+   </div>
+
+<!-- indicators to display active image --->
+<div>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+    <span class="indicator"></span>
+</div>
+<br>
+<script>
+    let index = 0;
+    carousel();
+
+    function carousel() {
+        const photos = document.querySelectorAll('.images');
+        const indicators = document.querySelectorAll('.indicator');
+
+        photos.forEach(photo => photo.style.display = 'none');
+        index++;
+        if (index > photos.length) {
+            index = 1;
+        }
+        indicators.forEach(indicator => indicator.classList.remove('active'));
+
+        photos[index - 1].style.display = 'block';
+        indicators[index - 1].classList.add('active');
+        setTimeout(carousel, 3000);
+    }
+</script>
+        </div>
+        <br>
+        <h2>my portfolio.</h2>
+        <h3 id="typing" style="padding-left: 60px;"></h3>
+        <br>
+        <br>
+        <p>An aspiring digital designer and web developer &#8212;
+            I have always loved designing and creating websites,
+            wanting to learn more and expand on my current skill set.
+            <br>
+            <br>
+            The biggest step to all of this is my <b>Honours project!</b>
+            <br>
+        </p>
+        <br>
+
+        <div class="container">
+            
+            
+            <li style="font-size: 20px"> &#8212; <a style="font-size: 20px" href="projects.html">projects</a>
+            </li>
+            <br>
+            
+            <li style="font-size: 20px"> &#8212; <a style="font-size: 20px" href="improvements.html">code improvements</a>
+            </li>
+            <br>
+            
+            <li style="font-size: 20px"> &#8212; <a style="font-size: 20px" href="graduation.html">graduation</a>
+            </li>
+            <br>
+            
+            <li style="font-size: 20px"> &#8212; <a style="font-size: 20px" href="honours.html">honours project</a>
+            </li>
+            <br>
+            
+            
+        </div>
+
+    </div>
+
+    <script>
+        const text = "created using my honours project.";
+        const speed = 60;
+        const element = document.getElementById("typing");
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            } else {
+                element.innerHTML += '<span class="blink">_</span>'; // add the blinking "_" character
+            }
+        }
+
+        function repeatType() {
+            element.textContent = ''; // Clear the text
+            i = 0; // Reset the index
+            type(); // Start typing again
+        }
+
+        type(); // begin typing animation
+        setInterval(repeatType, 7000); // repeat every 7 seconds
+    </script>
+
+    </body>
+    <!-- FOOTER -->
+<footer>
+    <div style="padding-top: 30px" class="container">
+        <hr>
+        <p> I will keep improving as I go. Stay Tuned!</p>
+       <!-- <p> I don't think I'll be needing a newsletter subscription system...</p> -->
+        <p> You can also find me here: <br>
+        <a style="padding-left: 10px; padding-right: 20px;" href="https://github.com/ineedsleepfs"><i style="font-size:30px" class="fa">&#xf09b;</i></a>
+        <a href="https://www.linkedin.com/in/karmen-tsang-920b86274/"><i style="font-size:30px; color: #0072b1"
+                                                                         class="fa">&#xf0e1;</i></a>
+        </p>
+     <p style="font-size: 0.7em">&#169 2023 k. tsang </p>
+    </div>
+</footer>
+</div>
+</html>
