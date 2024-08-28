@@ -50,7 +50,7 @@ Here, as shown below, is the updated wireframe.
 <img style="max-width: 100%; height: 100%;" src="/assets/images/Wellbeing/wireframes.png" width="950"/>
 
 ---
-
+### Additional Features
 Looking back, I believe the project would have greatly benefited from incorporating a dark mode.
 Currently, the light background may strain users' eyes and cause dryness, 
 which is not ideal for a wellbeing app. 
