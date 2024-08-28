@@ -34,9 +34,8 @@ have been lost due to no access to my university servers.
 
 However, I am able to deploy a half working website as shown below.
 
+
 <img style="max-width: 100%; height: 100%;" src="/assets/images/Wellbeing/olddesign.png"/>
-
-
 
 ---
 It is quite basic and I knew that I could do better, so I made some improvements and drew up a new wireframe.
@@ -50,7 +49,7 @@ Here, as shown below, is the updated wireframe.
 <img style="max-width: 100%; height: 100%;" src="/assets/images/Wellbeing/wireframes.png" width="950"/>
 
 ---
-### Additional Features
+#### Additional Features
 Looking back, I believe the project would have greatly benefited from incorporating a dark mode.
 Currently, the light background may strain users' eyes and cause dryness, 
 which is not ideal for a wellbeing app. 
