@@ -1,6 +1,6 @@
 ---
 title: projects
-description:
+description: New projects of 2024
 date: 2024-07-15
 include: true
 ---
