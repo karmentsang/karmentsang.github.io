@@ -34,9 +34,9 @@ have been lost due to no access to my university servers.
 
 However, I am able to deploy a half working website as shown below.
 
-<img src="/assets/images/Wellbeing/home.png" width="310"/>
-<img src="/assets/images/Wellbeing/mind.png" width="310"/>
-<img src="/assets/images/Wellbeing/body.png" width="310"/>
+<img style="max-width: 100%; height: 100%;" src="/assets/images/Wellbeing/home.png" width="310"/>
+<img style="max-width: 100%; height: 100%;" src="/assets/images/Wellbeing/mind.png" width="310"/>
+<img style="max-width: 100%; height: 100%;" src="/assets/images/Wellbeing/body.png" width="310"/>
 
 
 ---
@@ -47,8 +47,8 @@ This is created using **Figma**, which is where I draw up most of my wireframes 
 Here, as shown below, is the updated wireframe.
 
 
-<img src="/assets/images/Wellbeing/wireframes1.png" width="950"/>
-<img src="/assets/images/Wellbeing/wireframes.png" width="950"/>
+<img style="max-width: 100%; height: 100%;" src="/assets/images/Wellbeing/wireframes1.png" width="950"/>
+<img style="max-width: 100%; height: 100%;" src="/assets/images/Wellbeing/wireframes.png" width="950"/>
 
 ---
 
