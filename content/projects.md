@@ -1,6 +1,6 @@
 ---
 title: projects
-description: Side projects of mine
+description:
 date: 2024-07-15
 include: true
 ---
