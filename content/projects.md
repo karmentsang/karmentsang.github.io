@@ -35,7 +35,7 @@ have been lost due to no access to my university servers.
 However, I am able to deploy a half working website as shown below.
 
 
-<img style="max-width: 100%; height: 100%;" src="/assets/images/Wellbeing/olddesign.png" width="964"/>
+<img style="max-width: 100%; max-height: 100%;" src="/assets/images/Wellbeing/olddesign.png" width="964"/>
 
 ---
 It is quite basic and I knew that I could do better, so I made some improvements and drew up a new wireframe.
