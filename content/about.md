@@ -1,8 +1,10 @@
 ---
-title: about me
-description:  What is there to know about me?
+title: Who Am I?
 include: false
 ---
+
+<img src="assets/images/portfolio/karmen.png" width="100%">
+
 
 Hi, my name is Karmen! 
 I am a BSc Hons Computer Science 2023 graduate from The University of Strathclyde.
@@ -30,9 +32,6 @@ Gaming has been a part of my life for as long as I can remember. Even at the age
 I would eagerly watch my dad play Resident Evil 4 late into the night, captivated by the 
 sheer excitement and enjoyment it brought - and the jump scares.
 
----
 
 
 
-
-Oh, you're still here? Follow this <a href="album.html" class="aedit" style="color: blue">link</a> to see all my photos in one place.

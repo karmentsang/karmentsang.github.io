@@ -1,0 +1,58 @@
+
+
+/*-------------------- FOOTER STYLING --------------------*/
+
+/*-- NEWSLETTER --*/
+.newsletter {
+    display: grid;
+    justify-items: left;
+    align-items: center;
+}
+
+.field {
+    font-size: inherit;
+    background-color: transparent;
+    text-align: left;
+    width: 55%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 10px;
+}
+
+.field::placeholder {
+    font-family: "Monaco", monospace;
+    color: #3a3a3a;
+}
+
+.sub {
+    text-align: justify-all;
+    width: 37%;
+    padding: 7px;
+    border: none;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    cursor: pointer;
+    outline: none;
+}
+
+a:hover {
+    color: #000000
+}
+
+.buttonIn {
+    position: relative;
+}
+
+button {
+    font-size: 20px;
+    background-color: transparent;
+    margin-left: 60%;
+    margin-bottom: 10px;
+    position: absolute;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    color: #065535;
+}

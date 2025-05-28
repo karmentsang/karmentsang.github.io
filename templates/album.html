@@ -18,10 +18,10 @@
 
     <!-- NAVIGATION BAR -->
     <div class="container">
-        <a href="index.html" style="text-decoration: none;">k. tsang</a><br><br>
-        <li><a style=" font-size: 1em; " href="about.html">about</a></li>
-        <li><a style=" font-size: 1em; " href="contact.html">contact</a></li>
-        <li><a style=" font-size: 1em; " href="album.html">gallery</a></li>
+        <p class="container center"><a href="index.html"><img width="30%" src="assets/images/k.png"></a><br><br>
+        <a style=" font-size: 1em;" href="about.html">about </a>|
+        <a style=" font-size: 1em; padding-top: 10px;" href="contact.html">contact </a>|
+        <a style=" font-size: 1em;" href="album.html">gallery </a>|
         <a style="font-size: 1em; " id="theme-toggle"><i class="fa fa-sun-o" aria-hidden="true"></i><i
                 class="fa fa-moon-o" aria-hidden="true"></i></a>
 
@@ -42,8 +42,7 @@
                 <tr>
                     {% for image in folder.images %}
                     <td style="display: inline-block; padding: 20px"><img src="/{{ image}}" alt="" id="popup"
-                                                                          width="434px" height="526"
-                                                                          style="max-width: 100%; height: 100%;">
+                                                                          width="434px" height="547px" style="max-width: 100%; height: auto;">
                     </td>
                     {% endfor %}
                 </tr>

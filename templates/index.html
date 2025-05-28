@@ -5,89 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="/assets/css/light.css">
+    <link rel="stylesheet" href="/assets/css/dark.css">
+    <link rel="stylesheet" href="/assets/css/typing.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
-    <title>k.</title>
+
+    <title>Portfolio</title>
 </head>
 
 <div class="layout">
     <body>
 
-
     <!-- MAIN CONTENT -->
-    <div class="container">
-        <a href="index.html" style="text-decoration: none;">k. tsang</a><br><br>
-        <li><a style=" font-size: 1em;" href="about.html">about</a></li>
-        <li><a style=" font-size: 1em; padding-top: 10px;" href="contact.html">contact</a></li>
-        <li><a style=" font-size: 1em;" href="album.html">gallery</a></li>
-        <a style="font-size: 1em; " id="theme-toggle"><i class="fa fa-sun-o" aria-hidden="true"></i><i
-                class="fa fa-moon-o" aria-hidden="true"></i></a>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="container center">
-        {% include "slides.html" %}
+    <div class="container center">
+       <a href="index.html"><img style="width: 100%" src="assets/images/portfolio/portfolio2.png"></a>
+        <div class="nav">
+            <a href="work.html">PROJECTS</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
         </div>
         <br>
-        <h2>my portfolio.</h2>
-        <h3 id="typing" style="padding-left: 60px;"></h3>
         <br>
-        <br>
-        <p>An aspiring digital designer and web developer &#8212;
-            I have always loved designing and creating websites,
-            wanting to learn more and expand on my current skill set.
-            <br>
-            <br>
-            The biggest step to all of this is my <b>Honours project!</b>
-            <br>
+        <img style="width: 100%; padding-bottom: 2.5em;" src="assets/images/portfolio/intro.png">
+        <div class=" container center">
+            <h1 id="typing"></h1>
+        </div>
+
+        <p><br>Welcome to my digital corner &#8212;
+            a portfolio that brings together the things I create, the
+            work I'm proud of, and the hobbies that keep me curious. I'm an aspiring digital designer and web developer,
+            and this site is
+            where I document and share my journey &#8212; from personal projects to professional milestones,
+            and even the occasional glimpse into daily life.
         </p>
         <br>
+        <h2 style="color: #f1a4ae;">What You'll Find Here.</h2>
+        <p> Projects: The things I've built, designed, or contributed to &#8212; whether for clients, school, work, or
+            fun.
+            <br>
+            Passions: Bits of my life beyond work such as Karmy, my 3D press-on nails.
+            <br></p>
+        <p>This portfolio is more than a resume &#8212; it's a space to think out loud, share my growth, and connect
+            with
+            people who care about thoughtful work. It's a way to keep track of how my thinking and skills evolve over
+            time, and hopefully, inspire or collaborate with others along the way.
+        </p>
+        <h2 style="color: #f1a4ae">How I Built It.</h2>
+        <p> I designed and developed this site from scratch using my Honours project &#8212; A Static Site Generator.
+            It's a reflection of both my technical skills and my aesthetic preferences &#8212; simple, clean,
+            and focused on content. I'm always tweaking things behind the scenes, so don't be surprised if it changes
+            over time.
+            <br></p>
+    </div>
+
+    <div class="container">
+       <img style="width: 100%; padding-bottom: 2em; padding-top: 4em;" src="assets/images/portfolio/projects.png">
+        <div class="nav">
+            <a href="tennents.html"><img style="width: 100%; padding-bottom: 3em;" src="assets/images/tennents/tennents.png"></a>
+            <a style="font-size: 2em;" href="tennents.html"><span style="font-size: 1.5em; color:#f1a4ae;">01 </span> Tennent's 'Taps On' Campaign</a>
+        </div>
+
 
         <div class="container">
+       <img style="width: 100%; padding-bottom: 2em; padding-top: 4em;" src="assets/images/portfolio/passions.png">
+        <div class="nav">
+
+
+            <a style="font-size: 2em;" href="karmy.html">Karmy Studio</a>
+        </div>
+
+
+        <br>
+            <!--
+        <div class="container nav">
             {% if recent %}
             {% for page in recent %}
-            <li style="font-size: 20px"> &#8212; <a style="font-size: 20px" href="{{ page.url }}">{{ page.title }}</a>
-            </li>
+            <li style="font-size: 20px;"> &#8212; <a style="font-size: 1.2em;" href="{{ page.url }}">{{ page.title}}</a></li>
             <br>
             {% endfor %}
             {% endif %}
         </div>
-
     </div>
-
+-->
     <script>
-        const text = "created using my honours project.";
+        const text = "Welcome to my portfolio!";
         const speed = 60;
+
         const element = document.getElementById("typing");
         let i = 0;
 
         function type() {
-            if (i < text.length) {
-                element.textContent += text.charAt(i);
+            if (i <= text.length) {
+                element.innerHTML = text.substring(0, i) + '<span class="blink">_</span>';
                 i++;
                 setTimeout(type, speed);
-            } else {
-                element.innerHTML += '<span class="blink">_</span>'; // add the blinking "_" character
             }
         }
 
-        function repeatType() {
+         function repeatType() {
             element.textContent = ''; // Clear the text
             i = 0; // Reset the index
             type(); // Start typing again
         }
-
         type(); // begin typing animation
         setInterval(repeatType, 7000); // repeat every 7 seconds
+
     </script>
 
-    </body>
     {% include "footer.html" %}
+
+
+    </body>
 </div>
 </html>

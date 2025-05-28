@@ -26,7 +26,7 @@ and (max-device-width: 1024px) {
 }
 
 
-/* For Mobile Landscape View */
+/* For mobile landscape view */
 @media screen and (max-device-width: 640px)
 and (orientation: landscape) {
     .container {
@@ -46,7 +46,7 @@ body {
 /*--- create the basic blog layout ---*/
 .layout {
     background-color: rgb(240, 240, 240);
-    max-width: 62.5em;
+    max-width: 95em;
     margin-left: auto;
     margin-right: auto;
     padding: 24px;
@@ -81,10 +81,10 @@ body {
     font-weight: bold;
     padding-bottom: 2px;
     font-size: 120%;
-    text-decoration: underline;
 }
 
 .links a a:hover {
+    color: blue;
     text-decoration: none;
 }
 
@@ -126,7 +126,7 @@ h1 {
 h2 {
     color: black;
     font-size: 2em;
-    font-weight: inherit;
+    font-weight: bold;
     text-align: left;
     margin: 0;
     }
@@ -134,7 +134,7 @@ h2 {
 h3 {
     color: black;
     font-size: 1.5em;
-    font-weight: normal;
+    font-weight: bold;
     text-align: left;
 }
 
@@ -142,7 +142,7 @@ h3 {
 
 p {
     text-align: justify;
-    font-size: 100%;
+    font-size: 1.2em;
 }
 
 .p-weight {
@@ -153,21 +153,6 @@ p {
     padding: 1rem 50rem;
 }
 
-nav a {
-    border-bottom: 1px solid #3a3a3a;
-    text-align: justify;
-    color: black;
-    padding: 1.5rem 1em;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #9BBBAE;
-    color: black;
-    border-bottom: 1px solid #065535;
-    text-decoration: none;
-}
-
 .float {
     display: inline;
 }
@@ -175,78 +160,21 @@ nav a:hover {
 a {
     text-align: justify;
     color: black;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 1.7em;
+    padding: 10px;
 }
 
-.aedit {
-    font-size: 100%;
-}
-
-a:hover {
-    color: navy;
-    text-decoration: underline;
+.nav a:hover {
+    color: #FFBE32;
 }
 
 em {
     font-weight: 400;
 }
 
-/*-------------------- FOOTER STYLING --------------------*/
-/*-- NEWSLETTER --*/
-.newsletter {
-    display: grid;
-    justify-items: left;
-    align-items: center;
-}
 
-.field {
-    font-size: inherit;
-    background-color: transparent;
-    text-align: left;
-    width: 55%;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #3a3a3a;
-    margin-bottom: 20px;
-    padding: 10px 0px 10px 10px;
-}
-
-.field::placeholder {
-    font-family: "Monaco", monospace;
-    color: #3a3a3a;
-}
-
-.sub {
-    text-align: justify-all;
-    width: 37%;
-    padding: 7px;
-    border: none;
-    font-weight: bold;
-    background-color: #3a3a3a;
-    cursor: pointer;
-    outline: none;
-}
-
-a:hover {
-    color: #000000
-}
-
-.buttonIn {
-    position: relative;
-}
-
-button {
-    font-size: 20px;
-    background-color: transparent;
-    margin-left: 60%;
-    margin-bottom: 10px;
-    position: absolute;
-    border: none;
-    height: 30px;
-    cursor: pointer;
-    color: #065535;
-}
 
 /*--- SLIDESHOW ---*/
 .slideshow {
@@ -261,6 +189,23 @@ button {
     text-align: center;
     position: center;
 }
+
+.bg {
+ background-color: black;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:15px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    border: 1px solid slategrey;
+
+}
+
+.pad{
+    padding: 100px;
+}
+
 .slideshow img {
     max-width: 100%;
 }
@@ -366,15 +311,17 @@ form {
 }
 
 .modal-content {
-    padding: 50px;
-    width: auto;
+    padding-left: 37%;
+    padding-top: 8%;
+    max-width: auto;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .full-image {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 50%;
+    max-height: auto;
+    position: center;
+
 }
 
 .close {
@@ -393,27 +340,4 @@ form {
 
 .up {
     float: right;
-}
-
-#typing {
-    font-size: 1.2em;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-}
-
-.blink {
-    animation: blink 0.5s infinite;
-}
-
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
 }

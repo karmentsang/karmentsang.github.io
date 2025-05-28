@@ -1,10 +1,13 @@
 ---
-title: contact
-description: Need to contact me?
+title: Let's Work Together
 include: false
 ---
 
-Best place to contact me is by email.
 
-Email Address: <a class="aedit" href="mailto: ktsanng@icloud.com">ktsanng@icloud.com</a>
+<img src="assets/images/portfolio/contact.png" width="100%">
+
+
+
+<br><br>
+<div class="nav">"<a href="mailto: hellokarmy@gmail.com">hellokarmy@gmail.com</a></div>
 
