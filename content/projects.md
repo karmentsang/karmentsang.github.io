@@ -19,23 +19,18 @@ Tennent's is flipping the script — while we all love a bit of sunshine, our sk
 That's why they have launched limited-edition T-shirts designed by iconic Scottish talents, 
 with 100% profits going to Melanoma UK.
 
+I had the absolute pleasure of joining the amazing team at John Doe to work on the Tennent's "Taps On" Campaign! 
+I took on roles in videography and directing models to bring the project to life.
+
+
 <br>
 ###<div class="nav"><span style="font-size: 2em; color:#f1a4ae;">|</span><a style="font-size: 2em;" href="karmy.html">Karmy Studio</a></div>
 
 My very own 3D press-on nails!
 
+
 <br>
 ###<div class="nav"><span style="font-size: 2em; color:#f1a4ae;">|</span><a style="font-size: 2em;" href="refactor.html">Refactoring Code</a></div>
-
-
-I had the absolute pleasure of joining the amazing team at John Doe to work on the Tennent's "Taps On" Campaign! 
-I took on roles in videography and directing models to bring the project to life.
-
-
-
-
-<br>
-###<div class="nav"><span style="font-size: 2em; color:#f1a4ae;">|</span><a style="font-size: 2em;" href="karmy.html">Karmy Studio</a></div>
 
 In-progress: 2024-07
 
