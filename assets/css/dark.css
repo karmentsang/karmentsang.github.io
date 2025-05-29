@@ -162,6 +162,9 @@ p {
     display: inline;
 }
 
+.box {
+display:grid }
+
 a {
     text-align: justify;
     color: white;

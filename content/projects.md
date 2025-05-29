@@ -1,8 +1,7 @@
 ---
-title: projects
-description: New projects of 2024
-date: 2024-07-15
-include: true
+title: All Projects
+description: Click the titles to see more!
+include: false
 ---
 
 
@@ -11,47 +10,64 @@ I developed during university.
 This will help me apply new skills and approaches to improve my work.
 
 
-Edit: 2024-07-21
+<br>
+###<div class="nav"><span style="font-size: 2em; color:#f1a4ae;">|</span><a style="font-size: 2em;" href="tennents.html">Tennent's 'Taps On' Campaign</a></div>
 
-I plan to undertake a small project to redesign this website, 
-focusing on enhancing its visual appeal and usability. 
+Project carried out: 2025-04-12
 
----
+Tennent's is flipping the script — while we all love a bit of sunshine, our skin doesn't always agree (I wear SPF daily!). 
+That's why they have launched limited-edition T-shirts designed by iconic Scottish talents, 
+with 100% profits going to Melanoma UK.
 
-### Well-being Support App 
-#### Group Project
+<br>
+###<div class="nav"><span style="font-size: 2em; color:#f1a4ae;">|</span><a style="font-size: 2em;" href="karmy.html">Karmy Studio</a></div>
 
-This is a group assessment that was given to complete as part of class within my course.
-The aim of this project is to develop a prototype that shows key elements of our application, but it does not have to be a full
-working application with some elements as placeholders or simplified. 
+My very own 3D press-on nails!
 
-
-We aimed to make this appealing to all ages and genders, 
-so we conducted a little (it is not required for this project) user research and testing to ensure it meets diverse needs and preferences.
-
-When working on this project I created wireframes to get a gist of what we want and what we would expect. Unfortunatly, those original wireframes
-have been lost due to no access to my university servers. 
-
-However, I am able to deploy a half working website as shown below.
+<br>
+###<div class="nav"><span style="font-size: 2em; color:#f1a4ae;">|</span><a style="font-size: 2em;" href="refactor.html">Refactoring Code</a></div>
 
 
-<img style="max-width: 100%; max-height: 100%;" src="/assets/images/Wellbeing/olddesign.png" width="964"/>
-
----
-It is quite basic and I knew that I could do better, so I made some improvements and drew up a new wireframe.
-This is created using **Figma**, which is where I draw up most of my wireframes for various group projects.
+I had the absolute pleasure of joining the amazing team at John Doe to work on the Tennent's "Taps On" Campaign! 
+I took on roles in videography and directing models to bring the project to life.
 
 
-Here, as shown below, is the updated wireframe.
 
 
-<img style="max-width: 100%; height: 100%;" src="/assets/images/Wellbeing/wireframes1.png" width="950"/>
-<img style="max-width: 100%; height: 100%;" src="/assets/images/Wellbeing/wireframes.png" width="950"/>
+<br>
+###<div class="nav"><span style="font-size: 2em; color:#f1a4ae;">|</span><a style="font-size: 2em;" href="karmy.html">Karmy Studio</a></div>
 
----
-#### Additional Features
-Looking back, I believe the project would have greatly benefited from incorporating a dark mode.
-Currently, the light background may strain users' eyes and cause dryness, 
-which is not ideal for a wellbeing app. 
-Implementing a dark mode would enhance user comfort and align better with our 
-focus on promoting overall wellness.
+In-progress: 2024-07
+
+After completing my dissertation — which focused on building a custom static site generator —
+I continued to refine and expand the website beyond the scope of the original project. 
+
+
+Looking ahead, I plan to undertake a smaller redesign project to enhance both the visual appeal 
+and usability of this site. This includes refining the layout, improving performance, 
+and making the overall experience more engaging for visitors. 
+While the core of the site remains powered by the static site generator I developed during my 
+honours project, these post-dissertation updates reflect my ongoing commitment to learning, 
+iterating, and building better web experiences.
+
+
+
+<br>
+###<div class="nav"><span style="font-size: 2em; color:#f1a4ae;">|</span><a style="font-size: 2em;" href="wellbeing.html">Well-being Support App</a></div>
+
+In our third year of university, 
+we began developing browser-based applications as part of our coursework. 
+One of our key projects involved working as a team to design and build a web app prototype, 
+focusing on both design and functionality within the browser environment.
+
+
+This project allowed us to divide tasks and contribute different features — 
+from user interface design to interactive elements — using front-end technologies. 
+While it wasn’t a fully functional app, it gave us valuable hands-on experience in collaborative 
+development, version control, and turning concepts into working prototypes. 
+It also highlighted the importance of teamwork, communication, and iterative problem-solving 
+in the development process.
+
+
+
+
