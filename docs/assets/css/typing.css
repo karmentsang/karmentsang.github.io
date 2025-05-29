@@ -1,0 +1,16 @@
+#typing {
+            font-family: monospace;
+            font-size: 2em;
+            display: inline;
+        }
+
+        .blink {
+            font-size: inherit;
+            color: #f1a4ae;
+            animation: blink 0.7s steps(1) infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
