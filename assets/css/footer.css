@@ -1,58 +1,151 @@
 
-
-/*-------------------- FOOTER STYLING --------------------*/
-
-/*-- NEWSLETTER --*/
-.newsletter {
-    display: grid;
-    justify-items: left;
-    align-items: center;
+/* ========================= FOOTER STYLING ========================= */
+.footer_background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;            /* ↖ change if your footer is shorter */
+  transform: translateY(100%);      /* hidden = pushed down */
+  transition: transform 2s ease; /* controls speed */
+  z-index: 100;
+  will-change: transform;           /* smoother */
+  background-color: lightgray;
+  border-radius: 40px 40px 0px 0px;
 }
 
-.field {
-    font-size: inherit;
-    background-color: transparent;
-    text-align: left;
-    width: 55%;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #3a3a3a;
-    margin-bottom: 20px;
-    padding: 10px 0px 10px 10px;
+.footer_background.visible {
+  transform: translateY(0);
 }
 
-.field::placeholder {
-    font-family: "Monaco", monospace;
-    color: #3a3a3a;
+
+.footer_background2 {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;            /* ↖ change if your footer is shorter */
+  background-color: lightgray;
+
 }
 
-.sub {
-    text-align: justify-all;
-    width: 37%;
-    padding: 7px;
-    border: none;
-    font-weight: bold;
-    background-color: #3a3a3a;
-    cursor: pointer;
-    outline: none;
+
+
+
+/* ========================= FIRST SECTION ========================= */
+.gmail {
+  position: absolute;         /* fixed on scroll */
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-a:hover {
-    color: #000000
+.gmail a {
+  font-size: clamp(2rem, 8vw, 6rem);
+  font-family: "Red Hat Display", sans-serif;
+  letter-spacing: -1px;
+  font-weight: 900;
+  color: slategray;
+  transition: color 0.2s ease;
 }
 
-.buttonIn {
-    position: relative;
+.gmail a:hover {
+  color: #222222;
 }
 
-button {
-    font-size: 20px;
-    background-color: transparent;
-    margin-left: 60%;
-    margin-bottom: 10px;
-    position: absolute;
-    border: none;
-    height: 30px;
-    cursor: pointer;
-    color: #065535;
+/* ========================= CONTACT LINKS ========================= */
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  position: relative;
+  top: 60%;
+  z-index: 3;
+}
+
+.contacts a:hover{color: slategray;}
+
+.contacts .details {
+  font-weight: 700;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  color: #222;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+/* Icon styling */
+.contacts .details i.fa {
+  font-style: normal;         /* ensure icons behave */
+  font-size: 1.2em;
+}
+
+/* ========================= HUGE HALF WRITTEN WORD ========================= */
+.watermark {
+  --fs: clamp(4rem, 10vw, 20rem); /* min | fluid | max font-size */
+  position: absolute;
+  left: 70%;
+  bottom: -4vh;                   /* crops a bit off the bottom */
+  transform: translateX(-50%);    /* true horizontal centering */
+  display: block;
+  white-space: nowrap;
+  font: 800 var(--fs)/0.86 "Helvetica Neue", Arial, sans-serif;
+  color: #222222;
+  opacity: 0.95;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ========================= RESPONSIVE STYLES ========================= */
+/* MOBILE */
+@media (max-width: 640px) {
+  .contacts {
+    max-width: 100%;
+    gap: 1rem;
+  }
+  .contacts .details {
+    font-size: clamp(1rem, 4vw, 3rem);
+  }
+  .watermark {
+    --fs: clamp(10rem, 30vw, 40rem);
+    bottom: -3vh;            /* lower to show more of the word */
+    left: 135%;
+    transform: translateX(-50%);
+  }
+}
+
+/* TABLET */
+@media screen and (min-device-width: 600px) and (max-device-width: 1024px) {
+  .watermark {
+    --fs: clamp(10rem, 30vw, 40rem);
+    bottom: -3vh;
+    left: 110%;
+    transform: translateX(-50%);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .watermark {
+    --fs: clamp(6rem, 30vw, 25rem);
+    bottom: -6vh;                   /* hide a bit more for drama */
+  }
+}
+
+/* MOBILE LANDSCAPE */
+@media screen and (orientation:landscape){
+  .watermark {
+    --fs:clamp(8rem,25vw,35rem);
+    left:80%;
+    bottom:-10vh
+  }
+
+.contacts {top:45%}
+.contacts .details {
+  font-size: clamp(1rem,2vw,1.4rem)
+  }
 }

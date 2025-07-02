@@ -1,0 +1,26 @@
+
+/* =========================  3 COLUMN IMAGE GRID  ========================= */
+
+.grid3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* three equal columns */
+  width: 100vw;
+  height: 100vh;   /* fill the parent (.scrolling-section) */
+}
+
+.grid3 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops without distortion */
+  object-position: center; /* crop from center */
+}
+
+/* Mobile: Stack vertically */
+@media (max-width: 600px) {
+  .grid3 img{
+    grid-template-columns: 1fr;            /* single column   */
+    grid-template-rows: repeat(3, 1fr);    /* 3 equal rows    */
+    height: 100dvh;
+    overflow: hidden;
+  }
+}

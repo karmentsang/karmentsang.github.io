@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -23,7 +23,7 @@
     <!-- =========================  MANROPE FONT  ========================= -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&displa=swap" rel="stylesheet">
 
     <!-- =========================  RED HAT DISPLAY FONT  ========================= -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,10 +31,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
           rel="stylesheet">
 
-    <title>Tennent's</title>
+    <title>Contact</title>
 
 </head>
 <body>
+<!-- =========================  MAIN CONTENT  ========================= -->
 
 <div class="container">
     <header class="site-header">
@@ -51,12 +52,9 @@
         </div>
     </header>
 
-    <section class="blink-section">
-        <h1 style="color: #222222; letter-spacing: -2px;" id="blinking4"></h1>
-    </section>
-
     <!-- FOOTER -->
-    <div class="footer_background">
+    <div class="footer_background2">
+
         <!-- SCROLLING TEXT -->
         <div class="scrolling-section">
             <div class="scrolling-text2">
@@ -65,10 +63,12 @@
                     <span>Let's talk &#183; Let's talk &#183; Let's talk &#183; Let's talk &#183; Let's talk &#183;</span>
                 </div>
             </div>
+
             <!-- EMAIL -->
             <div class="gmail">
                 <a href="mailto:hellokarmy@gmail.com">hellokarmy@gmail.com</a>
             </div>
+
             <!-- LINKS -->
             <div class="contacts">
                 <a class="details" href="https://github.com/karmentsang"><i class="fa">&#xf09b;</i> GitHub</a>
@@ -76,30 +76,10 @@
                                                                                                  class="fa">&#xf0e1;</i>
                     LinkedIn</a>
             </div>
-            <div class="container nav">
-                <a style="float: right;" href="#top">&#8205; <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-            </div>
+            <!-- BLOCK TEXT -->
+            <span class="watermark">karmen tsang</span>
         </div>
-        <!-- BLOCK TEXT -->
-        <span class="watermark">karmen tsang</span>
     </div>
 </div>
-
-    <script>
-    const text = "Tennent's";
-    const element = document.getElementById('blinking4');
-
-    // Create a text node with the full text instantly
-    const textNode = document.createTextNode(text);
-
-    // Create the blinking cursor span
-    const cursor = document.createElement('span');
-    cursor.className = 'blink';
-    cursor.textContent = '_';
-
-    element.appendChild(textNode);
-    element.appendChild(cursor);
-    </script>
-
 </body>
 </html>

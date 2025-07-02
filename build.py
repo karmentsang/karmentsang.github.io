@@ -13,7 +13,6 @@ from assets.includes.album import album
 template_dir = 'templates'
 outputs_dir = 'docs'
 assets_dir = 'assets'
-images_dir = 'assets/images/korea'  # images are all copyright free
 
 # create jinja2 env
 env = Environment(loader=FileSystemLoader(template_dir))
@@ -41,13 +40,14 @@ def build_pages():
     # look for md files
     for path, names, filenames in os.walk('content'):
         for filename in filenames:
-            if filename.endswith('.md'):
+            if filename.endswith(('.md', '.html')):
                 # read the content of the file
                 with open(os.path.join(path, filename), 'r') as f:
                     content = f.read()
 
                 # extract the front matter and body
-                fm, body = extract_fm(content)
+                fm, body = extract_fm(content) if extract_fm(content) else ({}, content)
+
                 # extract the title, description, author and date from the front matter
                 title = fm.get('title', os.path.splitext(filename)[0])
                 description = fm.get('description', '')
@@ -57,36 +57,35 @@ def build_pages():
                 category = fm.get('category', 'Uncategorized')
                 favourite = fm.get('favourite', False)
 
-                # process markdown content
-                process = process_md(body)
+                # process content
+                if filename.endswith('.md'):
+                    processed_content = process_md(body)
+                else:
+                    processed_content = body  # raw HTML assumed valid
+
                 output_filename = os.path.splitext(filename)[0] + '.html'
                 # define the URL for the page
                 url = os.path.relpath(os.path.join(path, output_filename), 'content')
 
                 # render the template and write the output to the output directory
+                # render using base.html
                 template = env.get_template('base.html')
-                # allow front matter and content to be rendered
-                output = template.render(content=process, title=title,
+                output = template.render(content=processed_content, title=title,
                                          author=author, date=date,
                                          description=description)
                 with open(os.path.join(outputs_dir, url), 'w') as f:
                     f.write(output)
 
                 # append the page to the list of generated pages with the correct category
-                if not include:  # if page is not included do not generate on homepage
+                if not include:
                     continue
                 if favourite:
-                    fav_pages.append({'title': title,
-                                      'url': url,
-                                      'description': description,
-                                      'date': date})
-
+                    fav_pages.append({'title': title, 'url': url,
+                                      'description': description, 'date': date})
                 if category not in categories:
                     categories[category] = []
-                categories[category].append({'title': title,
-                                             'url': url,
-                                             'description': description,
-                                             'date': date})
+                categories[category].append({'title': title, 'url': url,
+                                             'description': description, 'date': date})
 
     # sort the pages in ascending order by date
     for pages in categories.values():
@@ -104,9 +103,9 @@ def build_pages():
     recent = recent[:5]
 
     # generate homepage // TWO TEMPLATES FOR TWO DIFFERENT PERSONAS
-    template = env.get_template('index.html')
+    template = env.get_template('home.html')
     final = template.render(categories=categories, recent=recent, favourite=fav_pages)
-    with open(os.path.join(outputs_dir, 'index.html'), 'w') as f:
+    with open(os.path.join(outputs_dir, 'home.html'), 'w') as f:
         f.write(final)
 
 
