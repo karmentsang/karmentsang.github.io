@@ -103,9 +103,9 @@ def build_pages():
     recent = recent[:5]
 
     # generate homepage // TWO TEMPLATES FOR TWO DIFFERENT PERSONAS
-    template = env.get_template('home.html')
+    template = env.get_template('index.html')
     final = template.render(categories=categories, recent=recent, favourite=fav_pages)
-    with open(os.path.join(outputs_dir, 'home.html'), 'w') as f:
+    with open(os.path.join(outputs_dir, 'index.html'), 'w') as f:
         f.write(final)
 
 
