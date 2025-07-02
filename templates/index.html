@@ -1,133 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="/assets/css/dark.css">
-    <link rel="stylesheet" href="/assets/css/typing.css">
-    <link rel="stylesheet" href="/assets/css/scrolling.css">
+
+    <!-- =========================  CSS FILES  ========================= -->
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" href="/assets/css/extras/blink.css">
+    <link rel="stylesheet" href="/assets/css/extras/grid.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/extras/scrolling.css">
+    <link rel="stylesheet" href="/assets/css/extras/fade.css">
+
+    <!-- =========================  JS  ========================= -->
+    <script src="assets/includes/script.js" defer></script>
+
+    <!-- =========================  FONTS  ========================= -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- =========================  MANROPE FONT  ========================= -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
 
+    <!-- =========================  RED HAT DISPLAY FONT  ========================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
+
     <title>Karmen Tsang's Portfolio</title>
+
 </head>
+<body>
+<!-- =========================  MAIN CONTENT  ========================= -->
 
-<div>
-    <body>
-
-    <!-- MAIN CONTENT -->
-    <a href="index.html"><img style="width: 100%" src="assets/images/portfolio/heading.png"></a>
-    <div class=">
-        <div class="nav">
-            <a href="projects.html">projects</a>
-            <a href="about.html">about</a>
-            <a href="contact.html">contacts</a>
-        </div>
-
-          <div class="scrolling-text" aria-label="Scrolling site intro">
-  <div class="scrolling-track">
-    <span>&#183; Creative Portfolio &#183; Creative Portfolio &#183; Creative Portfolio &#183; Creative Portfolio &#183;</span>
-    <span>Creative Portfolio &#183; Creative Portfolio &#183; Creative Portfolio &#183; Creative Portfolio &#183;</span>
-  </div>
-</div>
-
-        <br>
-        <img style="width: 100%; padding-bottom: 2.5em;" src="assets/images/portfolio/intro2.png">
-        <br>
-        <div class=" container center">
-            <h1 id="typing"></h1>
-        </div>
-        <br>
-        <br>
-        <h2 style="color: #f1a4ae;">Aspiring Digital Designer & Web Developer.</h2>
-        <p>Welcome to my digital corner &#8212;
-            a portfolio that brings together the things I create, the
-            work I'm proud of, and the hobbies that keep me curious. This site is
-            where I document and share my journey &#8212; from personal projects to professional milestones,
-            and even the occasional glimpse into daily life.
-        </p>
-        <br>
-        <h2 style="color: #f1a4ae;">What You'll Find Here.</h2>
-        <p> Projects: The things I've built, designed, or contributed to &#8212; whether for clients, school, work, or
-            fun.
+<div class="container">
+    <header class="site-header">
+        <div class="center">
             <br>
-            Passions: Bits of my life beyond work such as Karmy, my 3D press-on nails.
-            <br></p>
-        <p>This portfolio is more than a resume &#8212; it's a space to think out loud, share my growth, and connect
-            with
-            people who care about thoughtful work. It's a way to keep track of how my thinking and skills evolve over
-            time, and hopefully, inspire or collaborate with others along the way.
-        </p>
-        <h2 style="color: #f1a4ae">How I Built It.</h2>
-        <p> I designed and developed this site from scratch using my Honours project &#8212; A Static Site Generator.
-            It's a reflection of both my technical skills and my aesthetic preferences &#8212; simple, clean,
-            and focused on content. I'm always tweaking things behind the scenes, so don't be surprised if it changes
-            over time.
-            <br></p>
-    </div>
+            <a href="home.html"><img style="width: 40%;" src="assets/images/portfolio/title.png"></a>
 
-    <div class="container">
-       <a href="projects.html"><img style="width: 80%; padding-bottom: 2em; padding-top: 4em;" src="assets/images/portfolio/projects.png"></a>
-        <div class="nav">
-
-            <a href="tennents.html"><img style="width: 100%; padding-bottom: 3em;" src="assets/images/tennents/tennents.png"></a>
-            <span style="font-size: 3em; color:#f1a4ae;">01</span><a style="font-size: 2em;" href="tennents.html">Tennent's</a>
-
-            <a href="karmy.html"><img style="width:100%; padding-bottom: 3em; padding-top: 3em;" src="assets/images/karmystudio/aurora.jpg"></a>
-            <span style="font-size: 3em; color:#f1a4ae;">02</span><a style="font-size: 2em;" href="karmy.html">Karmy Studio</a>
-
-            <a href="refactor.html"></a>
-            <span style="font-size: 3em; color:#f1a4ae;">03</span><a style="font-size: 2em;" href="karmy.html">Website Redesign</a>
-
+            <div class="nav">
+                <a href="projects.html">projects</a>
+                <a href="about.html">about</a>
+             <a href="footer.html">contact</a>
+                <br>
+            </div>
         </div>
+    </header>
 
-
- </div>
-
-
-        <br>
-            <!--
-        <div class="container nav">
-            {% if recent %}
-            {% for page in recent %}
-            <li style="font-size: 20px;"> &#8212; <a style="font-size: 1.2em;" href="{{ page.url }}">{{ page.title}}</a></li>
-            <br>
-            {% endfor %}
-            {% endif %}
+    <section class="scrolling-section">
+        <div class="grid3">
+            <img class="background-img" src="assets/images/subs/General/me.jpg">
+            <img class="background-img" src="assets/images/subs/General/me1.jpg">
+            <img class="background-img" src="assets/images/subs/General/me3.jpg">
         </div>
-    </div>
--->
-    <script>
-        const text = "Welcome to my portfolio!";
-        const speed = 60;
+        <div class="scrolling-text">
+            <div class="scrolling-track">
+                <span>&#183; Creative Portfolio &#183; Creative Portfolio &#183; Creative Portfolio &#183; Creative Portfolio &#183; Creative Portfolio &#183;</span>
+                <span>Creative Portfolio &#183; Creative Portfolio &#183; Creative Portfolio &#183; Creative Portfolio &#183; Creative Portfolio &#183;</span>
+            </div>
+            <div class="scrolling-reverse">
+                <span>&#183; By Karmen Tsang &#183; By Karmen Tsang &#183; By Karmen Tsang &#183; By Karmen Tsang &#183; By Karmen Tsang &#183;</span>
+                <span>By Karmen Tsang &#183; By Karmen Tsang &#183; By Karmen Tsang &#183; By Karmen Tsang &#183; By Karmen Tsang &#183;</span>
+            </div>
+        </div>
+    </section>
 
-        const element = document.getElementById("typing");
-        let i = 0;
+    <!-- =========================  2ND SECTION  ========================= -->
 
-        function type() {
-            if (i <= text.length) {
-                element.innerHTML = text.substring(0, i) + '<span class="blink">_</span>';
-                i++;
-                setTimeout(type, speed);
-            }
-        }
+    <section class="blink-section">
+        <h1 style="color: #222222; letter-spacing: -2px;" id="blinking"></h1>
+    </section>
 
-         function repeatType() {
-            element.textContent = ''; // Clear the text
-            i = 0; // Reset the index
-            type(); // Start typing again
-        }
-        type(); // begin typing animation
-        setInterval(repeatType, 7000); // repeat every 7 seconds
+    <!-- =========================  3RD SECTION  ========================= -->
+    <section class="hero">
+        <div class="third">
+            <div class="crop">
+                <img class="background-img" src="assets/images/karmystudio/aurora.jpg" alt="">
+            </div>
+        </div>
+        <div class="textfade k">
+            <a href="karmy.html"><h1>KARMY</h1></a>
+        </div>
+    </section>
+    <!-- =========================  4TH  SECTION  ========================= -->
 
-    </script>
+    <section class="hero">
+        <div class="grid3">
+            <img class="background-img" src="assets/images/tennents/t2.jpg">
+            <img class="background-img" src="assets/images/tennents/t1.jpg">
+            <img class="background-img" src="assets/images/tennents/t3.jpg">
+            <div class="textfade t">
+                <span><a href="tennents.html"><h1>TENNENT'S</h1></a></span>
+            </div>
+        </div>
+    </section>
 
     {% include "footer.html" %}
-    </body>
+
 </div>
+</body>
 </html>
