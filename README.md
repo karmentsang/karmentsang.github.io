@@ -2,7 +2,7 @@
 
 A static site generator from my Honours project during University.
 
-It's not the best - I know 😭 
+#### It's not the best - I know 😭 
 
 It ingests Markdown or raw HTML files from the `/content` folder, renders them with Jinja2 templates, and publishes the finished pages to `/docs`, ready for GitHub Pages.
 
