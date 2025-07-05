@@ -1,0 +1,44 @@
+
+/* =========================  MODAL STYLING  ========================= */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    padding-left: 37%;
+    padding-top: 8%;
+    max-width: auto;
+    height: auto;
+}
+
+.full-image {
+    max-width: 50%;
+    max-height: auto;
+    position: center;
+
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.up {
+    float: right;
+}
